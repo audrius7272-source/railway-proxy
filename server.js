@@ -84,7 +84,7 @@ wss.on('connection', (clientWs, req) => {
   try {
     serverWs = new WebSocket(target, {
       headers: {
-        'Origin': 'https://moomoo.io',
+        'Origin': 'https://tankionline.com/play/',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
       },
       handshakeTimeout: 10000
@@ -145,4 +145,5 @@ wss.on('connection', (clientWs, req) => {
 
 server.listen(PORT, () => {
   console.log(`[PROXY] Glotus Proxy running on port ${PORT}`);
+
 });
